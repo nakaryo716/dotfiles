@@ -6,8 +6,10 @@ call plug#end()
 
 "====Editor===="
 syntax enable
+colorscheme slate
 filetype plugin indent on
 set relativenumber
+set clipboard+=unnamed
 
 "====Insert mode cursor===="
 if has('vim_starting')
@@ -34,3 +36,5 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+"set Ctrl+j as esc"
+noremap! <C-j> <esc>
