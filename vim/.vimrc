@@ -2,14 +2,16 @@
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 "====Editor===="
 syntax enable
-colorscheme slate
+colorscheme default
 filetype plugin indent on
 set relativenumber
 set clipboard+=unnamed
+set spell
 
 "====Insert mode cursor===="
 if has('vim_starting')
