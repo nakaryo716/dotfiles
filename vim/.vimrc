@@ -10,7 +10,7 @@ syntax enable
 colorscheme default
 filetype plugin indent on
 set relativenumber
-set clipboard+=unnamed
+set clipboard=unnamed
 set spell
 
 "====Insert mode cursor===="
@@ -25,7 +25,8 @@ endif
 autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2 expandtab
 " TypeScript"
 autocmd FileType typescript,typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
-
+"Java"
+autocmd FileType java setlocal tabstop=4 shiftwidth=4 expandtab
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
