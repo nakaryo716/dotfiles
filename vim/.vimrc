@@ -27,6 +27,8 @@ autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType typescript,typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
 "Java"
 autocmd FileType java setlocal tabstop=4 shiftwidth=4 expandtab
+"go"
+autocmd FileType go setlocal tabstop=4 shiftwidth=4 expandtab
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
@@ -41,3 +43,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 "set Ctrl+j as esc"
 noremap! <C-j> <esc>
+
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ` ``<Left>
