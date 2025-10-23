@@ -11,7 +11,6 @@ colorscheme default
 filetype plugin indent on
 set relativenumber
 set clipboard=unnamed
-set spell
 
 "====Insert mode cursor===="
 if has('vim_starting')
@@ -48,5 +47,4 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 inoremap " ""<Left>
-inoremap ' ''<Left>
 inoremap ` ``<Left>
